@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteBase /
+
+# Redirigir solicitudes que coincidan con /api/users a index.php
+RewriteRule ^api/users$ index.php [L]
+
+# Las siguientes dos líneas evitan la reescritura para archivos y directorios existentes
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redirigir todas las demás solicitudes a index.php
+RewriteRule ^(.*)$ index.php [L]

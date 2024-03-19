@@ -10,6 +10,9 @@ services:
       - .:/var/www/html
     networks:
       - default
+    environment:
+      APACHE_RUN_USER: www-data
+      APACHE_RUN_GROUP: www-data
   mariadb:
     image: mariadb
     container_name: prueba_mariadb

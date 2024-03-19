@@ -1,7 +1,8 @@
 <?php
-require_once __DIR__ . "/../../../../core/generics/usecase/usecase.generic.php";
+require_once __DIR__ . "/../usecases/get-users.usecase.php";
+require_once __DIR__ . "/../../../../../core/generics/usecase/usecase.generic.php";
 
-use repository\IUserRepository;
+use repositories\IUserRepository;
 use usecase\IUsecase;
 
 

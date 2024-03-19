@@ -2,6 +2,7 @@
 
 namespace services;
 
+require_once __DIR__ . "/../../infrastructure/adapters/user.adapter.php";
 require_once __DIR__ . "/../../domain/usecases/add-user.usecase.php";
 require_once __DIR__ . "/../../domain/usecases/auth-user.usecase.php";
 require_once __DIR__ . "/../../domain/usecases/get-user-by-id.usecase.php";
@@ -11,15 +12,14 @@ require_once __DIR__ . "/../../domain/usecases/update-user.usecase.php";
 
 
 use models\User;
-use repository\IUserRepository;
 
-use ArrayObject;
 use AddUserUsecase;
 use AuthUserDto;
 use AuthUserUsecase;
 use GetUserByIdUsecase;
 use GetUsersUsecase;
 use RemoveUserUsecase;
+use repositories\IUserRepository;
 use UpdateUserUsecase;
 use UserAdapter;
 

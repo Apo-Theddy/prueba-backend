@@ -19,7 +19,7 @@ RUN apt-get update && apt-get install -y \
 RUN docker-php-ext-install gd pdo pdo_mysql mysqli zip
 
 # Copiar el contenido de tu aplicación al contenedor
-COPY . /var/www/html
+COPY src/ /var/www/html
 
 # Establecer el directorio de trabajo
 WORKDIR /var/www/html

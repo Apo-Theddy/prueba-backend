@@ -1,8 +1,10 @@
 <?php
-require_once __DIR__ . "/../../../../core/generics/usecase/usecase.generic.php";
+require_once __DIR__ . "/../usecases/get-user-by-id.usecase.php";
+require_once __DIR__ . "/../../../../../core/generics/usecase/usecase.generic.php";
+
 
 use models\User;
-use repository\IUserRepository;
+use repositories\IUserRepository;
 use usecase\IUsecase;
 
 class GetUserByIdUsecase implements IUsecase

@@ -1,6 +1,6 @@
 <?php
 
-namespace repository;
+namespace repositories;
 
 use ArrayObject;
 use AuthUserDto;
