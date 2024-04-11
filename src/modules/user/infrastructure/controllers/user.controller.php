@@ -16,7 +16,6 @@ class UserController extends BaseController
   {
     $this->userService = new UserService();
   }
-
   public function getUsers()
   {
     $strErrorDesc = '';
